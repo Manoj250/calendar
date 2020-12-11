@@ -1,6 +1,7 @@
 from ctypes import CDLL
 import tkinter as tk
-so_file_path=r"E:\\c program\\cal.so"
+import os
+so_file_path=os.getcwd()+"\cal.so"
 so_file=CDLL(so_file_path)
 def printcalendar():
     T.config(state="normal")
